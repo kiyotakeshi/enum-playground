@@ -8,14 +8,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class PizzaTests {
 
     @Test
-    void name() {
+    void create() {
         Pizza pizza = new Pizza();
         pizza.setStatus(Pizza.PizzaStatus.READY);
         assertThat(pizza.isDeliverable()).isTrue();
     }
 
     @Test
-    void name2() {
+    void caseMethod() {
         Pizza pizza = new Pizza();
         pizza.setStatus(Pizza.PizzaStatus.READY);
         assertThat(pizza.getDeliveryTimeInDays()).isEqualTo(2);
