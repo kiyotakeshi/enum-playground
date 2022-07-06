@@ -15,5 +15,8 @@ class ElementTest {
         assertThat(Element.valueOfLabel("Berylliums")).isNull();
         assertThat(Element.valueOfLabelFromMap("Beryllium")).isEqualTo(Element.BE);
         assertThat(Element.valueOfLabelFromMap("Berylliums")).isNull();
+
+        assertThat(Element.valueOfAtomicNumberFromMap(1)).isEqualTo(Element.H);
+        assertThat(Element.valueOfAtomicNumberFromMap(10)).isNull();
     }
 }
